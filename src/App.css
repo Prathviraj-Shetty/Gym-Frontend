@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+body {
+  font-family: 'Josefin Sans';
+  background-color: #0c0c0c;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+  right: 140px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  width: 349px;
+  height: 400px;
+  border: 9px solid #524b4b;
+}
+
+.hero-banner-img {
+  position: absolute;
+  right: 80px;
+  top: 0px;
+  width: 470px;
+  height: 300px;
+  border-radius: 39px;
+
+}
+
+.explore-btn {
+  font-family: math;
+  background: #32282894;
+  border: 2px solid red;
+  padding: 8px;
+  font-size: 22px;
+  color: white;
+  border-radius: 21px;
+}
+
+.explore-btn:hover {
+  background: #da0100;
+  border: 2px solid grey;
+  color: red;
+}
+
+.exercise-card {
+  width: 320px;
+  height: 445px;
+  background: linear-gradient(181deg, black, red, black, red, black);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.7s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.03, 1.03);
+}
+
+.search-btn:hover {
+  color: #FF2625 !important;
+  border: 1px solid #ffffff !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+#gymprofile {
+  background-image: url(assets/images/gymprofile.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#gymprofile input,
+textarea,
+select {
+  background-color: #0e0d0de3 !important;
+  color: white;
+}
+
+#gymprofile,
+.h6 {
+  background-color: #0e0d0de3 !important;
+  color: white;
+  /* border-radius: 4px !important;
+  border: 1px solid white; */
+}
+
+#gymprofile #formlayout {
+  background: #000000de;
+  border-radius: 10px;
+}
+
+/* #gymprofile .h6{
+  background-color: #291c1ce3!important;
+  
+} */
+.gymhome {
+  background-image: url(assets/images/gymhomebg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.gymlogo {
+  background-color: black;
+  width: 20rem;
+  border-radius: 68%;
+
+}
+.textshadow{
+  text-shadow: 5px 2px 1px black;
+}
+.register-btn {
+  background-color: red;
+}
+
+.register-btn:hover {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid red;
+}
+
+.gymcontainer {
+  background: #000000c7;
+  border-radius: 10rem;
+}
+.successbox{
+  width: 30%;
+}
+.detailscard{
+  margin-top: 5rem !important;
+  background-color: #cbc5b0 !important;
+}
+.detailscard .printbtn{
+  background-color: rgb(255, 183, 0);
+}
+.detailscard .printbtn:hover{
+  background-color: rgb(236, 236, 236) !important;
+}
+
+.redbtn{
+  background-color: rgb(246, 45, 45);
+  border: 2px solid rgb(181 181 181);
+  color: rgb(255, 255, 255);
+}
+.redbtn:hover{
+  background-color: #000000;
+  border: 2px solid red;
+  color: white;
+}
+.blackbtn{
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.blackbtn:hover{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  /* font-weight: bold; */
+  color: rgb(0, 0, 0);
+}
+.yellowbtn{
+  background-color: rgb(255, 238, 0);
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.yellowbtn:hover{
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 238, 0);
+  /* font-weight: bold; */
+  color: rgb(255, 238, 0);
+}
+
+
+@media screen and (max-width:1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: static !important;
+  }
+
+  .hero-banner-img {
+    /* display: none; */
+    width: 300px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+  .successbox{
+    width: 40%;
+  }
+ 
+
+}
+@media screen and (max-width:992px) {
+   .schedulebtns{
+    display: flex;
+    justify-content: center;
+  }
+  .schedulebtns button{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .schedulebtns .cancelbtn{
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .hero-banner-img {
+    display: none;
+
+  }
+  .searchbar{
+    width: 75% !important;
+  }
+  .cardtable{
+    width: 95% !important;
+  }
+  .gymlogo {
+    background-color: rgba(0, 0, 0, 0);
+  
+  }
+  .viewcard{
+    width: 75% !important;
+  }
+  .successbox{
+    width: 60%;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .exercise-card {
+    width: 280px;
+  }
+  .searchbar{
+    width: 95% !important;
+  }
+  .viewcard{
+    width: 95% !important;
+  }
+  .successbox{
+    width: 90%;
+  }
+ 
+}
